@@ -19,7 +19,6 @@ class Employee(User):
 class Admin(User):
     def __init__(self, name, email, phone, address):
         super().__init__(name, email, phone, address)
-        self.employees=[]
     def add_employee(self,restaurant,employee):
         restaurant.add_employee(employee)
     def view_emplpoyees(self,restaurant):
